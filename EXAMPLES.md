@@ -332,8 +332,8 @@ Use these examples as templates:
 ## Additional Resources
 
 For more information:
-- See the main [README.md](../README.md) for API reference
-- Check [README_IT.md](../README_IT.md) for Italian documentation
+- See the main [README.md](README.md) for API reference
+- Check [README_IT.md](README_IT.md) for Italian documentation
 - Review the source code in `Cubong.cpp` for implementation details
 
 Happy coding! 🎨💡
