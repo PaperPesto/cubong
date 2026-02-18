@@ -1,0 +1,75 @@
+#######################################
+# Syntax Coloring Map For Cubong
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Cubong	KEYWORD1
+Box	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# LED Control
+led	KEYWORD2
+piano	KEYWORD2
+spengi	KEYWORD2
+spengiCubo	KEYWORD2
+riempiCubo	KEYWORD2
+
+# Tensor Operations
+add	KEYWORD2
+azzeraTensore	KEYWORD2
+fillPiano	KEYWORD2
+getTensore	KEYWORD2
+
+# Display Functions
+accendiCubo	KEYWORD2
+accendiCubo2	KEYWORD2
+sendLayer	KEYWORD2
+lampeggiaCubo	KEYWORD2
+accendiPiano	KEYWORD2
+
+# Text Display
+letteraM	KEYWORD2
+letteraI	KEYWORD2
+letteraS	KEYWORD2
+
+# Debug Functions
+printaTensore	KEYWORD2
+printaTensore_piano	KEYWORD2
+printaTensore_riga	KEYWORD2
+printaTensore_elementi	KEYWORD2
+printaBuffer	KEYWORD2
+testTensore	KEYWORD2
+
+# Buffer Operations
+sendBuffer	KEYWORD2
+sendBuffer2	KEYWORD2
+azzeraBuffer	KEYWORD2
+tensoreToBuffer	KEYWORD2
+tensoreToBuffer2	KEYWORD2
+
+# Box Methods
+move	KEYWORD2
+addCumulativo	KEYWORD2
+film1	KEYWORD2
+
+# Helper Functions
+sendBox	KEYWORD2
+somma	KEYWORD2
+stampaPiano	KEYWORD2
+serialOut	KEYWORD2
+decoordinatore	KEYWORD2
+ciao	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+tensore	LITERAL1
+buffer	LITERAL1
+pos	LITERAL1
