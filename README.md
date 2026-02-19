@@ -6,6 +6,28 @@ An Arduino library for controlling a 5x5x5 LED cube using shift registers.
 
 Cubong is a library designed to simplify the control of a 5x5x5 LED cube (125 LEDs total) using the Arduino platform. The library uses shift registers (SN74HC595N) for multiplexing the LED matrix, allowing you to control all 125 LEDs using only a few digital pins.
 
+## Gallery
+
+![Cubong photo 1](assets/20190415_194439.jpg)
+_5x5x5 blue led matrix_
+
+![Cubong photo 2](assets/20190415_194710.jpg)
+_Power management driver_
+
+![Cubong photo 3](assets/20190415_194846.jpg)
+_Logical driver - top_
+
+![Cubong photo 4](assets/20190415_194932.jpg)
+_Logical driver - bottom_
+
+## Videos
+
+[![Cubong video 1](https://img.youtube.com/vi/WauND18Tt2c/hqdefault.jpg)](https://youtu.be/WauND18Tt2c)
+[![Cubong video 2](https://img.youtube.com/vi/z4xPvoMR7FE/hqdefault.jpg)](https://youtu.be/z4xPvoMR7FE)
+
+- https://youtu.be/WauND18Tt2c
+- https://youtu.be/z4xPvoMR7FE
+
 ## Features
 
 - **Simple LED Control**: Turn individual LEDs on/off using 3D coordinates (x, y, z)
@@ -85,7 +107,7 @@ void loop() {
   // Turn on a single LED at position (2, 2, 2)
   cube.led(2, 2, 2);
   delay(1000);
-  
+
   // Turn off all LEDs
   cube.spengi();
   delay(1000);
@@ -105,6 +127,7 @@ Cubong(int data, int latch, int clock, int enable, int l0, int l1, int l2, int l
 Create a Cubong object with specified pin connections.
 
 **Parameters:**
+
 - `data` - Serial data pin for shift register
 - `latch` - Latch pin for shift register
 - `clock` - Clock pin for shift register
@@ -179,33 +202,43 @@ Creates a new Box object with its own tensor.
 The library includes several example sketches in the `examples/` folder:
 
 ### LampeggiaCubo_Input
+
 Demonstrates cube blinking with variable delay controlled by analog input.
 
 ### Miss
+
 Displays the letters "MISS" on the cube with variable positioning.
 
 ### RiempiCubo
+
 Fills the cube randomly, one LED at a time.
 
 ### SfogliaLed
+
 Scans through individual LEDs in sequence.
 
 ### SfogliaPiani
+
 Cycles through all five layers of the cube.
 
 ### SfogliaPiani_Vuoto
+
 Similar to SfogliaPiani but starts with empty layers.
 
 ### SfogliaPiani_input
+
 Layer cycling with variable speed from analog input.
 
 ### StampaTensore
+
 Demonstrates the tensor system by printing patterns.
 
 ### StampaTensore_Piani
+
 Shows how to build patterns layer by layer using the tensor.
 
 ### TestTensore
+
 Tests the tensor functionality with various patterns.
 
 ## Usage Tips
@@ -226,6 +259,7 @@ Tests the tensor functionality with various patterns.
 ### Multiplexing
 
 The library uses time-division multiplexing to control the cube:
+
 - Only one layer is active at a time
 - The library rapidly cycles through layers (typically 5ms per layer)
 - Persistence of vision creates the illusion of all LEDs being on simultaneously
@@ -233,6 +267,7 @@ The library uses time-division multiplexing to control the cube:
 ### Buffer System
 
 Internally, the library maintains:
+
 - A 32-bit buffer for shift register output
 - A 5x5x5 boolean tensor representing the cube state
 - Automatic conversion from tensor to buffer format
@@ -251,4 +286,4 @@ Created by PaperPesto
 
 ---
 
-*Note: This library is designed for educational purposes and DIY LED cube projects. For production use, additional optimization may be required.*
+_Note: This library is designed for educational purposes and DIY LED cube projects. For production use, additional optimization may be required._
